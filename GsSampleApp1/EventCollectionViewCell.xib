@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="B2g-31-JdP" customClass="EventCollectionViewCell" customModule="GsSampleApp1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdj-g7-fMp">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019/1/31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6j-Zs-Zf0">
+                                <rect key="frame" x="8" y="0.0" width="184" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="有明でテニスすっぞ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGj-5L-v2k">
+                                <rect key="frame" x="12" y="24.5" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="有明テニスの森" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwe-Qf-SVQ">
+                                <rect key="frame" x="12" y="49.5" width="121.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cwe-Qf-SVQ" firstAttribute="top" secondItem="gGj-5L-v2k" secondAttribute="bottom" constant="4" id="1Gr-Wv-Vf0"/>
+                            <constraint firstItem="gGj-5L-v2k" firstAttribute="top" secondItem="p6j-Zs-Zf0" secondAttribute="bottom" constant="4" id="1KR-YI-BlI"/>
+                            <constraint firstAttribute="trailing" secondItem="p6j-Zs-Zf0" secondAttribute="trailing" constant="8" id="1No-bO-9LE"/>
+                            <constraint firstAttribute="width" constant="200" id="Are-fj-c1D"/>
+                            <constraint firstAttribute="trailing" secondItem="gGj-5L-v2k" secondAttribute="trailing" constant="12" id="NHa-J6-68v"/>
+                            <constraint firstItem="p6j-Zs-Zf0" firstAttribute="leading" secondItem="rdj-g7-fMp" secondAttribute="leading" constant="8" id="aaL-b1-1Kh"/>
+                            <constraint firstAttribute="height" constant="80" id="dnH-t3-3Ge"/>
+                            <constraint firstItem="Cwe-Qf-SVQ" firstAttribute="leading" secondItem="rdj-g7-fMp" secondAttribute="leading" constant="12" id="fJW-e0-SPc"/>
+                            <constraint firstItem="p6j-Zs-Zf0" firstAttribute="top" secondItem="rdj-g7-fMp" secondAttribute="top" id="ojK-zq-iVr"/>
+                            <constraint firstItem="gGj-5L-v2k" firstAttribute="leading" secondItem="rdj-g7-fMp" secondAttribute="leading" constant="12" id="xme-OO-mjl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rdj-g7-fMp" firstAttribute="leading" secondItem="B2g-31-JdP" secondAttribute="leading" id="93N-3v-ulH"/>
+                <constraint firstItem="rdj-g7-fMp" firstAttribute="top" secondItem="B2g-31-JdP" secondAttribute="top" id="XTC-Tt-te1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jCx-eQ-mKZ"/>
+            <size key="customSize" width="395" height="268"/>
+            <connections>
+                <outlet property="eventNameLabel" destination="p6j-Zs-Zf0" id="u1Y-GP-gZI"/>
+                <outlet property="widthLayout" destination="Are-fj-c1D" id="YUH-zo-eFi"/>
+            </connections>
+            <point key="canvasLocation" x="237.59999999999999" y="44.07796101949026"/>
+        </collectionViewCell>
+    </objects>
+</document>

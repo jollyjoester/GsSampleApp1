@@ -18,6 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iUp-M4-kjt">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OgG-7F-S3Y">
+                                    <size key="itemSize" width="150" height="168"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcP-kQ-Ssm">
                                 <rect key="frame" x="282" y="526" width="22" height="22"/>
                                 <connections>
@@ -27,16 +38,38 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iUp-M4-kjt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N6A-MA-8lX"/>
+                            <constraint firstItem="iUp-M4-kjt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SHm-Ui-ftJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NcP-kQ-Ssm" secondAttribute="bottom" constant="20" id="YmC-jW-goy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcP-kQ-Ssm" secondAttribute="trailing" constant="16" id="fB0-jf-PVE"/>
+                            <constraint firstItem="iUp-M4-kjt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tJi-tu-Y2e"/>
+                            <constraint firstItem="iUp-M4-kjt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wZI-lx-rUx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="XAB-fS-Oc7"/>
+                    <connections>
+                        <outlet property="collectionView" destination="iUp-M4-kjt" id="c6e-Pc-E5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="960" y="130.98591549295776"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TIA-L8-ofu">
+            <objects>
+                <viewController id="MmQ-XJ-Ivl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAU-iW-oly">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ozb-MZ-p8P"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hs2-j3-L9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="840"/>
         </scene>
         <!--Add Event View Controller-->
         <scene sceneID="m1O-yw-6or">

@@ -14,6 +14,9 @@
 		B914F95921D9103E0072032E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B914F95721D9103E0072032E /* LaunchScreen.storyboard */; };
 		B914F96121D91DCD0072032E /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B914F96021D91DCD0072032E /* AddEventViewController.swift */; };
 		B914F96521D921760072032E /* SportsKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B914F96421D921760072032E /* SportsKind.swift */; };
+		B914F96721D935F30072032E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B914F96621D935F30072032E /* EventDetailViewController.swift */; };
+		B914F96921D936810072032E /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B914F96821D936810072032E /* EventCollectionViewCell.swift */; };
+		B914F96D21D9479B0072032E /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B914F96C21D9479B0072032E /* EventCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B914F95A21D9103E0072032E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B914F96021D91DCD0072032E /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		B914F96421D921760072032E /* SportsKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsKind.swift; sourceTree = "<group>"; };
+		B914F96621D935F30072032E /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		B914F96821D936810072032E /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		B914F96C21D9479B0072032E /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,12 @@
 			children = (
 				B914F94E21D9103D0072032E /* AppDelegate.swift */,
 				B914F95021D9103D0072032E /* ViewController.swift */,
+				B914F96621D935F30072032E /* EventDetailViewController.swift */,
 				B914F96021D91DCD0072032E /* AddEventViewController.swift */,
+				B914F96821D936810072032E /* EventCollectionViewCell.swift */,
 				B914F96421D921760072032E /* SportsKind.swift */,
 				B914F95221D9103D0072032E /* Main.storyboard */,
+				B914F96C21D9479B0072032E /* EventCollectionViewCell.xib */,
 				B914F95521D9103E0072032E /* Assets.xcassets */,
 				B914F95721D9103E0072032E /* LaunchScreen.storyboard */,
 				B914F95A21D9103E0072032E /* Info.plist */,
@@ -128,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B914F96D21D9479B0072032E /* EventCollectionViewCell.xib in Resources */,
 				B914F95921D9103E0072032E /* LaunchScreen.storyboard in Resources */,
 				B914F95621D9103E0072032E /* Assets.xcassets in Resources */,
 				B914F95421D9103D0072032E /* Main.storyboard in Resources */,
@@ -142,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B914F95121D9103D0072032E /* ViewController.swift in Sources */,
+				B914F96921D936810072032E /* EventCollectionViewCell.swift in Sources */,
+				B914F96721D935F30072032E /* EventDetailViewController.swift in Sources */,
 				B914F96121D91DCD0072032E /* AddEventViewController.swift in Sources */,
 				B914F94F21D9103D0072032E /* AppDelegate.swift in Sources */,
 				B914F96521D921760072032E /* SportsKind.swift in Sources */,
